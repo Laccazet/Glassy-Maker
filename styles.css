@@ -1,0 +1,99 @@
+:root {
+    --transparency: 0.2;
+    --blur: 10px;
+    --border-radius: 15px;
+    --outline: 0.5;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/wp.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#main {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#maker-wrapper {
+    width: 50%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    padding-left: 30px;
+}
+
+input {
+    width: 400px;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+}
+
+
+#preview {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+#glass {
+    background: rgba(255,255,255, var(--transparency));
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    border: 1px solid rgba(255,255,255, var(--outline));
+    
+    width: 400px;
+    height: 350px;
+}
+
+img{
+    position: absolute;
+    scale: 0.7;
+    top: 10px
+}
+
+#code {
+    width: 350px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
